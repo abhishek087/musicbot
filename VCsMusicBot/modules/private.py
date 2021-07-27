@@ -8,7 +8,6 @@ logging.basicConfig(level=logging.INFO)
 @Client.on_message(filters.private & filters.incoming & filters.command(['start']))
 def _start(client, message):
     client.send_message(message.chat.id,
-    await message.reply_sticker("BQACAgEAAxkDArRYSWD_q5Dsy7b_JC07cHOttiLqZWIKAAL3AQACEzMBRKHOEmFg5sYNIAQ")
         text=tr.START_MSG.format(message.from_user.first_name, message.from_user.id),
         parse_mode="markdown",
         reply_markup=InlineKeyboardMarkup(
