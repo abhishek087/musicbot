@@ -19,7 +19,11 @@ def _start(client, message):
                     InlineKeyboardButton(
                         "👥 Group", url=f"https://t.me/{SUPPORT_GROUP}"), 
                     InlineKeyboardButton(
-                        "Channel 📢", url=f"https://t.me/{UPDATES_CHANNEL}")
+                        "Channel 📢", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                [
+                    InlineKeyboardButton(
+                        "Help and Commands ❔", callback_data="help_back")]
+
                 ],
             ]
         ),
@@ -72,6 +76,21 @@ def help_answer(client, callback_query):
     client.edit_message_text(chat_id=chat_id,    message_id=message_id,
         text=tr.HELP_MSG[msg],    reply_markup=InlineKeyboardMarkup(map(msg))
     )
+@run_async
+def help_backabout_callback(update, context):
+    query = update.callback_query
+    if query.data == "help_back":
+        query.message.edit_text(
+            text=""" coming .""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="wait", url=f"https://t.me/{SUPPORT_GROUP}")
+                 ]
+                ]
+            ),
 
 
 def map(pos):
