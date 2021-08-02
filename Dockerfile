@@ -6,5 +6,5 @@ RUN pip3 install -U pip
 COPY . /app
 WORKDIR /app
 RUN pip3 install -U -r requirements.txt
-sudo pip install -U youtube-dl
+RUN pip install -U youtube-dl
 CMD python3 -m VCsMusicBot
