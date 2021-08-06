@@ -597,7 +597,8 @@ async def play(_, message: Message):
                     InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
                 ],
                 [
-                    InlineKeyboardButton(text="💝Support", url="t.me/tgxbotz_update"),
+                    InlineKeyboardButton(text="❤️ Update", url="t.me/tgxbotz_update"),
+                    InlineKeyboardButton(text="Support 🖤", url="t.me/tgxbotz_chat"),
                 ],
                 [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
             ]
@@ -693,7 +694,8 @@ async def play(_, message: Message):
                         InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
                     ],
                     [
-                        InlineKeyboardButton(text="💝Support", url="t.me/tgxbotz_update"),
+                        InlineKeyboardButton(text="❤️ Update", url="t.me/tgxbotz_update"),
+                        InlineKeyboardButton(text="Support 🖤", url="t.me/tgxbotz_chat"),
                     ],
                     [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
                 ]
@@ -854,7 +856,8 @@ async def ytplay(_, message: Message):
                 InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
             ],
             [
-                InlineKeyboardButton(text="💝Support", url="t.me/tgxbotz_update"),
+                InlineKeyboardButton(text="❤️ Update", url="t.me/tgxbotz_update"),
+                InlineKeyboardButton(text="Support 🖤", url="t.me/tgxbotz_chat"),
             ],
             [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
         ]
@@ -1088,7 +1091,7 @@ async def jiosaavn(client: Client, message_: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @Tgxbotz_Music_assistant to your Group and try again</b>",
+                        "\n\nOr manually add @MusicXobot_Assistant to your Group and try again</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -1245,7 +1248,8 @@ async def lol_cb(b, cb):
                 InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
             ],
             [
-                InlineKeyboardButton(text="💝Support", url="t.me/tgxbotz_update"),
+                InlineKeyboardButton(text="❤️ Update", url="t.me/tgxbotz_update"),
+                InlineKeyboardButton(text="Support 🖤", url="t.me/tgxbotz_chat"),
             ],
             [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
         ]
